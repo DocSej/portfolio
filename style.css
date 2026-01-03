@@ -32,7 +32,7 @@ body {
   border-radius: 50%;
   position: fixed;
   pointer-events: none;
-  z-index: 0;
+  z-index: 1; /* Keep below nav but above background */
   transform: translate(-50%, -50%);
   transition: transform 0.1s ease-out;
 }
@@ -128,7 +128,7 @@ body {
   color: var(--neon-pink);
   font-size: 1.5em;
   margin-bottom: 20px;
-  min-height: 1.6em; /* Prevents layout jump during typing */
+  min-height: 1.6em;
 }
 
 .hero-cta {
@@ -209,9 +209,16 @@ body {
   border-radius: 50px;
   color: var(--neon-pink);
   font-weight: 600;
+  transition: var(--transition);
 }
 
-/* --- WORKS & PROJECTS (BIGGER BOXES & NO CUT) --- */
+.skill-tag:hover {
+  background: var(--neon-pink);
+  color: #fff;
+  box-shadow: 0 0 15px var(--neon-pink);
+}
+
+/* --- WORKS & PROJECTS --- */
 .cards-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(380px, 1fr));
@@ -237,7 +244,6 @@ body {
 .card-img {
   width: 100%;
   height: 280px; 
-  /* 'contain' ensures the whole image fits inside the box without being cut off */
   object-fit: contain; 
   background: #000;
   padding: 15px;
@@ -274,7 +280,7 @@ body {
   filter: brightness(1.2);
 }
 
-/* --- CONTACT SECTION (STANDALONE) --- */
+/* --- CONTACT SECTION --- */
 .contact-section {
   padding: 100px 20px;
   background: linear-gradient(to bottom, #0a0a0a, #111);
@@ -298,13 +304,40 @@ body {
 .method-label { color: var(--neon-pink); font-weight: 700; font-size: 0.8em; text-transform: uppercase; }
 .method-value { color: #ccc; font-size: 1.1em; }
 
-.social-links { display: flex; gap: 15px; margin-top: 30px; }
-.social-btn {
-  width: 50px; height: 50px; display: flex; align-items: center; justify-content: center;
-  background: #1a1a1a; border: 1px solid #333; border-radius: 12px;
-  color: #fff; text-decoration: none; transition: var(--transition);
+/* --- ICON SPECIFIC FIXES --- */
+.social-links { 
+  display: flex; 
+  gap: 15px; 
+  margin-top: 30px; 
 }
-.social-btn:hover { border-color: var(--neon-blue); color: var(--neon-blue); box-shadow: 0 0 15px var(--neon-blue); }
+
+.social-btn {
+  width: 50px; 
+  height: 50px; 
+  display: flex; 
+  align-items: center; 
+  justify-content: center;
+  background: #1a1a1a; 
+  border: 1px solid #333; 
+  border-radius: 12px;
+  color: #fff; 
+  text-decoration: none; 
+  transition: var(--transition);
+  font-size: 1.4rem; /* Makes the icons large enough to see */
+}
+
+/* Ensure Font Awesome isn't overridden by Montserrat */
+.social-btn i {
+  font-family: "Font Awesome 6 Brands", "Font Awesome 6 Free" !important;
+  font-weight: 400;
+}
+
+.social-btn:hover { 
+  border-color: var(--neon-blue); 
+  color: var(--neon-blue); 
+  box-shadow: 0 0 15px var(--neon-blue);
+  transform: translateY(-5px);
+}
 
 .contact-form { display: flex; flex-direction: column; gap: 20px; }
 .contact-form input, .contact-form textarea {
@@ -328,4 +361,5 @@ footer { padding: 50px; text-align: center; border-top: 1px solid #222; font-siz
 @media (max-width: 850px) {
   .contact-container { grid-template-columns: 1fr; padding: 40px; }
   .cards-container { grid-template-columns: 1fr; }
+  .navbar { gap: 15px; }
 }
