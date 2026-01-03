@@ -1,130 +1,200 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Jesrel Villegas | Portfolio</title>
-  <link rel="stylesheet" href="style.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jesrel Villegas | Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <nav class="navbar">
-  <a href="#about">About</a>
-  <a href="#projects">Projects</a>
-  <a href="#skills">Skills</a>
-  <a href="#contact">Contact</a>
-</nav>
+    <div class="cursor-glow"></div>
 
+    <nav class="navbar">
+        <a href="#about">About</a>
+        <a href="#info">Info</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+    </nav>
 
+    <section class="hero">
+        <div class="hero-content">
+            <div class="profile-wrapper">
+                <div class="profile-aura"></div>
+                <img src="profile.jpg" alt="Jesrel Villegas" class="profile-img" onerror="this.src='https://ui-avatars.com/api/?name=Jesrel+Villegas&background=ff6ec7&color=fff&size=200'">
+            </div>
+            <h1>Jesrel Villegas</h1>
+            <h2 id="typing-text"></h2> 
+            <p>Exploring the intersection of hardware, software, and creative development.</p>
+            <a href="#contact" class="hero-cta">Let's Talk</a>
+        </div>
+    </section>
 
-<section class="hero">
-  <div class="hero-content">
-    <img src="profile.jpg" alt="Jesrel Villegas" class="profile-img">
-    <h1 class="animated-text">Jesrel Villegas</h1>
-    <h2>Computer Engineering Student | Aspiring Developer</h2>
-    <p>I build projects, learn coding, and explore new technologies.</p>
+    <section id="about" class="section reveal">
+        <h2 class="section-title">About Me</h2>
+        <div class="about-text">
+            <p>I am a 19-year-old developer from Toledo City, Cebu. Currently pursuing <strong>Computer Engineering</strong> at the University of Cebu, I balance my technical studies with a passion for gaming and digital content.</p>
+            <p>When I'm not coding or solving hardware problems, I'm streaming for <strong>Dumaguete Esports</strong>, engaging with a community of players and tech enthusiasts.</p>
+        </div>
+    </section>
 
-  </div>
-</section>
+    <section id="info" class="section reveal">
+        <h2 class="section-title">Background</h2>
+        <div class="info-grid">
+            <div class="info-card">
+                <h3>Personal Profile</h3>
+                <div class="info-item"><span class="info-label">Name</span><span class="info-value">Jesrel E. Villegas</span></div>
+                <div class="info-item"><span class="info-label">Age</span><span class="info-value">19</span></div>
+                <div class="info-item"><span class="info-label">Location</span><span class="info-value">Toledo City, Cebu</span></div>
+                <div class="info-item"><span class="info-label">Email</span><span class="info-value">jesrelvillegas15@gmail.com</span></div>
+            </div>
+            <div class="info-card">
+                <h3>Education</h3>
+                <div class="info-item"><span class="info-label">College</span><span class="info-value">University of Cebu</span></div>
+                <div class="info-item"><span class="info-label">High School</span><span class="info-value">PAU Excellencia Global Academy</span></div>
+                <div class="info-item"><span class="info-label">Junior High</span><span class="info-value">Luray II National High</span></div>
+                <div class="info-item"><span class="info-label">Elementary</span><span class="info-value">South City Central School</span></div>
+            </div>
+        </div>
+    </section>
 
+    <section id="skills" class="section reveal">
+        <h2 class="section-title">Tech Stack</h2>
+        <div class="skills-flex">
+            <div class="skill-tag">C / C++</div>
+            <div class="skill-tag">Java</div>
+            <div class="skill-tag">HTML5</div>
+            <div class="skill-tag">CSS3</div>
+            <div class="skill-tag">JavaScript</div>
+        </div>
+    </section>
 
-<section class="information">
-  
-  <h2 class="section-title">Information</h2>
+    <section id="projects" class="section reveal">
+        <h2 class="section-title">Works & Projects</h2>
+        <div class="cards-container">
+            <div class="display-card">
+                <img src="dumaguete.jpg" class="card-img" alt="Esports" onerror="this.src='https://via.placeholder.com/400x200/6a11cb/ffffff?text=Dumaguete+Esports'">
+                <div class="card-body">
+                    <h4>Dumaguete Esports</h4>
+                    <p>Professional Streaming & Page Management</p>
+                    <a href="https://www.facebook.com/PhoneHow" target="_blank" class="card-btn primary">Visit Page</a>
+                </div>
+            </div>
+            <div class="display-card">
+                <img src="javaquiz.png" alt="Java Quiz Game" class="card-img" onerror="this.src='https://via.placeholder.com/400x200/00f0ff/ffffff?text=Java+Quiz+Game'">
+                <div class="card-body">
+                    <h4>Java Quiz Game</h4>
+                    <p>An interactive quiz built with Java.</p>
+                    <a href="https://www.facebook.com/reel/1172316311676264" target="_blank" class="card-btn secondary">Watch Demo</a>
+                </div>
+            </div>
+        </div>
+    </section>
 
-  <div class="info-container-horizontal">
-    
-    <div class="info-left">
-      <div class="info-item name">Jesrel Villegas</div>
-      <div class="info-item age">19 years old</div>
-      <div class="info-item email">jesrelvillegas15@gmail.com</div>
-         <div class="info-item number">09666059378</div>
-      <div class="info-item location">Toledo City, Cebu, Philippines</div>
-    </div>
+    <section id="contact" class="contact-section reveal">
+        <h2 class="section-title">Get In Touch</h2>
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Let's Talk</h2>
+                <p>Have a project in mind or want to talk tech? Drop a message!</p>
+                
+                <div class="method-group">
+                    <p class="method-label">Primary Email</p>
+                    <p class="method-value">jesrelvillegas15@gmail.com</p>
+                </div>
 
-    <!-- RIGHT COLUMN -->
-    <div class="info-right">
-      <div class="info-item elementary">Elementary School: South City Central School</div>
-      <div class="info-item junior-high">Junior High School: Luray II National High School</div>
-      <div class="info-item senior-high">Senior High School: PAU Excellencia Global Academy</div>
-      <div class="info-item school">College: University of Cebu</div>
-      <div class="info-item course">Course: Computer Engineering</div>
-    </div>
-  </div>
-</section>
+                <div class="method-group">
+                    <p class="method-label">Phone</p>
+                    <p class="method-value">+63 966 605 9378</p>
+                </div>
 
+                <div class="social-links">
+                    <a href="https://www.facebook.com/villegas.jesrel" target="_blank" class="social-btn">FB</a>
+                    <a href="#" class="social-btn">GH</a>
+                    <a href="#" class="social-btn">LI</a>
+                </div>
+            </div>
 
- <!-- ABOUT SECTION -->
-<section id="about" class="section slide-in">
-  <h3>About Me</h3>
-  <p>
-    I am Jesrel Villegas, a 19-year-old from Toledo City, Cebu, Philippines.  
-    I am passionate about programming, problem-solving, and learning new technologies.  
-    I enjoy building projects, improving my coding skills, and exploring new ideas.  
-    In my free time, I love <strong>livestreaming</strong> and <strong>playing games</strong>, and I am currently a <strong>streamer for Dumaguete Esports</strong>, sharing gameplay and connecting with the gaming community.
-  </p>
-</section>
-<!-- HANDLED / PORTFOLIO SECTION -->
-<section class="handled">
-  <h2 class="section-title">Handled Page</h2>
+            <div class="contact-form">
+                <input type="text" placeholder="Your Name" id="form-name">
+                <input type="email" placeholder="Your Email" id="form-email">
+                <textarea rows="5" placeholder="Your Message" id="form-message"></textarea>
+                <button class="submit-btn" onclick="sendMail()">Send Message</button>
+            </div>
+        </div>
+    </section>
 
-  <div class="handled-container">
-    <!-- Single Handled Page -->
-    <div class="handled-card">
-      <img src="dumaguete.jpg" alt="Project" class="handled-img">
-      <h3 class="handled-title">Dumaguete Esports</h3>
-      <a href="https://www.facebook.com/PhoneHow" target="_blank" class="btn handled-btn">Visit Page</a>
-    </div>
-  </div>
-</section>
+    <footer>
+        © <span id="year"></span> Jesrel Villegas. Built with passion & code.
+    </footer>
 
+    <script>
+        document.getElementById('year').textContent = new Date().getFullYear();
 
+        // MOUSE GLOW
+        const glow = document.querySelector('.cursor-glow');
+        window.addEventListener('mousemove', (e) => {
+            glow.style.left = e.clientX + 'px';
+            glow.style.top = e.clientY + 'px';
+        });
 
- 
+        // TYPING EFFECT
+        const textElement = document.getElementById('typing-text');
+        const phrases = ["Computer Engineering Student", "Hardware Enthusiast", "Esports Manager", "Toledo City Native"];
+        let phraseIndex = 0;
+        let charIndex = 0;
+        let isDeleting = false;
 
+        function type() {
+            const currentPhrase = phrases[phraseIndex];
+            if (isDeleting) {
+                textElement.textContent = currentPhrase.substring(0, charIndex - 1);
+                charIndex--;
+            } else {
+                textElement.textContent = currentPhrase.substring(0, charIndex + 1);
+                charIndex++;
+            }
 
-<!-- PROJECTS SECTION -->
-<section id="projects" class="section">
-  <h3>View Projects</h3>
-  <div class="projects">
+            let typeSpeed = isDeleting ? 50 : 100;
+            if (!isDeleting && charIndex === currentPhrase.length) {
+                isDeleting = true;
+                typeSpeed = 2000;
+            } else if (isDeleting && charIndex === 0) {
+                isDeleting = false;
+                phraseIndex = (phraseIndex + 1) % phrases.length;
+                typeSpeed = 500;
+            }
+            setTimeout(type, typeSpeed);
+        }
 
-    <!-- Quiz Game Project Only -->
-    <div class="card">
-      <h4>Quizgame Java</h4>
-      <p>Java console-based quiz game using conditionals, loops,
-arrays, and user input handling.</p>
-      <a href="https://www.facebook.com/reel/1172316311676264" target="_blank" class="btn">View on Facebook</a>
-    </div>
+        // SCROLL REVEAL (Observer)
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('active');
+                }
+            });
+        }, { threshold: 0.1 });
 
-  </div>
-</section>
+        // INITIALIZE
+        window.addEventListener('DOMContentLoaded', () => {
+            type();
+            document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+        });
 
-
-<!-- SKILLS SECTION -->
-<section id="skills" class="section">
-  <h3>Skills</h3>
-  <div class="skills-container">
-    <div class="skill-card">C</div>
-    <div class="skill-card">Java</div>
-    <div class="skill-card">HTML</div>
-    <div class="skill-card">CSS</div>
-    <div class="skill-card">JavaScript</div>
-  </div>
-</section>
-
-
-<!-- CONTACT SECTION -->
-<section id="contact" class="section contact">
-  <h3>Contact Me</h3>
- <a href="mailto:jesrelvillegas15@gmail.com?subject=Hello Jesrel&body=Hi Jesrel,%0D%0A%0D%0AI want to contact you regarding..." class="btn">Email Me</a>
-
-  <a href="https://www.facebook.com/villegas.jesrel" target="_blank" class="btn fb-btn">Visit my Facebook</a>
-</section>
-
-  <script src="script.js"></script>
+        function sendMail() {
+            const name = document.getElementById('form-name').value;
+            const email = document.getElementById('form-email').value;
+            const message = document.getElementById('form-message').value;
+            if(!name || !message) {
+                alert("Please fill in your name and message!");
+                return;
+            }
+            const subject = encodeURIComponent(`Inquiry from ${name}`);
+            const body = encodeURIComponent(`From: ${name} (${email})\n\nMessage: ${message}`);
+            window.location.href = `mailto:jesrelvillegas15@gmail.com?subject=${subject}&body=${body}`;
+        }
+    </script>
 </body>
 </html>
-
-
- 
